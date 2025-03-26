@@ -147,6 +147,3 @@ GitHub Repo: [https://github.com/calvin1011/ai-career-coach](https://github.com/
 ##  License
 
 MIT License — free to use and build upon.
-
-```
-
