@@ -73,7 +73,11 @@ Evaluates an answer to an interview question based on relevance, tone, and quali
 **Response:**
 ```json
 {
-  "feedback": "Relevance: High\nTone: Confident\nSuggestions: Include a specific example of a time you used Azure Monitor."
+   "feedback": {
+     "relevance": "High",
+     "tone": "Confident",
+     "suggestions": "Include a specific example of a time you used Azure Monitor."
+   }
 }
 ```
 
