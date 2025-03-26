@@ -45,11 +45,17 @@ module.exports = async function (context, req) {
             }
         );
 
-        const feedbackText = response.data.choices[0].message.content.trim();
+        const rawFeedback = response.data.choices[0].message.content.trim();
+
+        const feedback = {
+            relevance: rawFeedback.match(/Relevance:\s*(.*)/i)?.[1]?.trim() || "Unknown",
+            tone: rawFeedback.match(/Tone:\s*(.*)/i)?.[1]?.trim() || "Unknown",
+            suggestions: rawFeedback.match(/Suggestions?:\s*([\s\S]*)/i)?.[1]?.trim() || "No suggestions provided"
+        };
 
         context.res = {
             status: 200,
-            body: { feedback: feedbackText }
+            body: { feedback }
         };
     } catch (err) {
         context.log.error("Error evaluating answer:", err.message);

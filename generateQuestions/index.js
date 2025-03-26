@@ -42,7 +42,10 @@ module.exports = async function (context, req) {
             }
         );
 
-        const questions = response.data.choices[0].message.content.trim().split('\n');
+        const questions = response.data.choices[0].message.content
+            .trim()
+            .split('\n')
+            .filter(q => q.trim());  // remove empty strings
 
         context.res = {
             status: 200,
