@@ -133,10 +133,15 @@ We used Microsoft's Responsible AI best practices by:
 
 ---
 
-##  Demo Video
+Got it! Here's the updated **`README.md` Demo Video section** with your YouTube link properly embedded:
 
- **[Watch the Demo (YouTube/Vimeo link here)]**  
-A short 3-minute walkthrough of the application, endpoints, and AI feedback in action.
+---
+
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/TXpwGsYzaYE/0.jpg)](https://youtu.be/TXpwGsYzaYE)  
+**[Click here to watch the full 3-minute walkthrough](https://youtu.be/TXpwGsYzaYE)**  
+A short demo showing how the application works, including API endpoints and AI feedback in action.
 
 ---
 
